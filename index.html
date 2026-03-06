@@ -594,8 +594,8 @@
     <button class="active" onclick="showTab('taxonomy', this)">Phase Taxonomy</button>
     <button onclick="showTab('mapping', this)">Phase Mapping</button>
     <button onclick="showTab('categories', this)">Phase Categories</button>
-    <button onclick="showTab('tags', this)">Tags</button>
-    <button onclick="showTab('colors', this)">Col&#x200B;or Coding</button>
+    <button onclick="showTab('tags', this)">Tags &amp; Tasks</button>
+    <button onclick="showTab('colors', this)">Col<span></span>or Coding</button>
     <button onclick="showTab('scenarios', this)">Scenarios</button>
   </nav>
 </header>
@@ -745,8 +745,8 @@
     <!-- Internal Operations -->
     <div class="project-type-block">
       <div class="project-type-header">
-        <div class="type-dot" style="background:#B7950B;"></div>
-        <h2>Internal Operations <span style="font-weight:300;opacity:.7">— Gold Projects</span></h2>
+        <div class="type-dot" style="background:#F9A825;"></div>
+        <h2>Internal Operations <span style="font-weight:300;opacity:.7">— Yellow Projects</span></h2>
       </div>
       <div class="phases-grid">
         <div class="phase-card">
@@ -776,11 +776,85 @@
       </div>
     </div>
 
+    <!-- Client Requests -->
+    <div class="project-type-block">
+      <div class="project-type-header">
+        <div class="type-dot" style="background:#C62828;"></div>
+        <h2>Client Requests <span style="font-weight:300;opacity:.7">— Red Projects</span></h2>
+      </div>
+      <div class="phases-grid">
+        <div class="phase-card">
+          <div class="phase-num">PHASE 1</div>
+          <div class="phase-name">Quick Response</div>
+          <div class="phase-desc">Fast email/Teams answers, one-off data pulls, simple questions requiring no formal output</div>
+          <span class="billability-badge billable">Billable</span>
+        </div>
+        <div class="phase-card">
+          <div class="phase-num">PHASE 2</div>
+          <div class="phase-name">Scoping &amp; Coordination</div>
+          <div class="phase-desc">Clarifying request scope, internal coordination, delegating work, planning response approach</div>
+          <span class="billability-badge billable">Billable</span>
+        </div>
+        <div class="phase-card">
+          <div class="phase-num">PHASE 3</div>
+          <div class="phase-name">Research &amp; Fulfillment</div>
+          <div class="phase-desc">Screenshots, data gathering, competitive pulls, landscape research to fulfill the request</div>
+          <span class="billability-badge billable">Billable</span>
+        </div>
+        <div class="phase-card">
+          <div class="phase-num">PHASE 4</div>
+          <div class="phase-name">Deliverable Production</div>
+          <div class="phase-desc">Building decks, write-ups, formatted outputs, or formal analysis documents for the client</div>
+          <span class="billability-badge billable">Billable</span>
+        </div>
+        <div class="phase-card">
+          <div class="phase-num">PHASE 5</div>
+          <div class="phase-name">Client Meeting &amp; Readout</div>
+          <div class="phase-desc">Calls, orientations, quarterly readouts, strategy meetings, presentations, debrief calls</div>
+          <span class="billability-badge billable">Billable</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Business Systems Management -->
+    <div class="project-type-block">
+      <div class="project-type-header">
+        <div class="type-dot" style="background:#D81B60;"></div>
+        <h2>Business Systems Management <span style="font-weight:300;opacity:.7">— Pink Projects</span></h2>
+      </div>
+      <div class="phases-grid">
+        <div class="phase-card">
+          <div class="phase-num">PHASE 1</div>
+          <div class="phase-name">Systems Administration</div>
+          <div class="phase-desc">Day-to-day maintenance — user management, permissions, settings changes, routine Timeneye upkeep, client site housekeeping</div>
+          <span class="billability-badge non-billable">Non-Billable</span>
+        </div>
+        <div class="phase-card">
+          <div class="phase-num">PHASE 2</div>
+          <div class="phase-name">Projects &amp; Implementation</div>
+          <div class="phase-desc">Larger structured work with a defined scope — Timeneye restructuring, taxonomy builds, data migrations, new system rollouts</div>
+          <span class="billability-badge non-billable">Non-Billable</span>
+        </div>
+        <div class="phase-card">
+          <div class="phase-num">PHASE 3</div>
+          <div class="phase-name">Reporting &amp; Analysis</div>
+          <div class="phase-desc">Data pulls, Timeneye usage reports, entry audits, metrics for stakeholders, Status Reports and Update Notion/Trackers</div>
+          <span class="billability-badge non-billable">Non-Billable</span>
+        </div>
+        <div class="phase-card">
+          <div class="phase-num">PHASE 4</div>
+          <div class="phase-name">Documentation &amp; Training</div>
+          <div class="phase-desc">Writing reference guides, creating training materials, onboarding staff to systems, answering "how do I use X" questions</div>
+          <span class="billability-badge non-billable">Non-Billable</span>
+        </div>
+      </div>
+    </div>
+
     <!-- Time Off -->
     <div class="project-type-block">
       <div class="project-type-header">
-        <div class="type-dot" style="background:#717D7E;"></div>
-        <h2>Time Off <span style="font-weight:300;opacity:.7">— Gray Project</span></h2>
+        <div class="type-dot" style="background:#E65100;"></div>
+        <h2>Time Off <span style="font-weight:300;opacity:.7">— Orange Project</span></h2>
       </div>
       <div style="padding:18px 22px;font-size:13px;color:#5a6a8a;line-height:1.6;">
         Keep existing phases: <strong>Vacation · Sick · Holiday · Lunch · Personal Day · Work Travel · Maternity/Paternity Leave · Bereavement · Jury Duty · Out of Office</strong>.
@@ -806,11 +880,11 @@
     </div>
 
     <div class="mapping-filters">
-      <button class="filter-btn active" onclick="filterTable('ALL', this)">All (92)</button>
+      <button class="filter-btn active" onclick="filterTable('ALL', this)">All (100)</button>
       <button class="filter-btn" onclick="filterTable('ARCHIVE', this)">Archive (4)</button>
-      <button class="filter-btn" onclick="filterTable('REVIEW', this)">Review (15)</button>
-      <button class="filter-btn" onclick="filterTable('CONSOLIDATE', this)">Consolidate (34)</button>
-      <button class="filter-btn" onclick="filterTable('RENAME', this)">Rename (38)</button>
+      <button class="filter-btn" onclick="filterTable('REVIEW', this)">Review (16)</button>
+      <button class="filter-btn" onclick="filterTable('CONSOLIDATE', this)">Consolidate (39)</button>
+      <button class="filter-btn" onclick="filterTable('RENAME', this)">Rename (40)</button>
       <button class="filter-btn" onclick="filterTable('KEEP', this)">Keep (1)</button>
     </div>
 
@@ -915,18 +989,21 @@
   <!-- ── TAB 4: TAGS ── -->
   <div id="tab-tags" class="tab-pane">
     <div class="section-intro">
-      Tags add a second axis of classification without bloating the phase list. Rule of thumb: <strong>phases = WHAT stage, tags = HOW or WHO</strong>.
-      Require at least 1 tag per entry (Timeneye setting) once lists are finalized.
+      Tags cross all projects — use them only where a task can't do the job. <strong>Rule of thumb: if you need to report <em>across</em> projects → tag. If it's specific to one project → task.</strong>
+      The old 8-tag-list system has been streamlined to <strong>3 tag lists</strong>, with most specifics moving to Tasks.
     </div>
 
+    <!-- TAGS section -->
+    <div class="block-title">✅ Active Tag Lists (3 only)</div>
+
     <div class="tag-card">
-      <div class="tag-list-name">Deliverable Type</div>
-      <div class="tag-used-in">Monitor Products · Custom &amp; Benchmarks</div>
+      <div class="tag-list-name">Contributing Team</div>
+      <div class="tag-used-in">All project types</div>
       <div class="tags-row">
-        <span class="tag-chip">report</span><span class="tag-chip">update</span><span class="tag-chip">matrix</span><span class="tag-chip">benchmark</span><span class="tag-chip">presentation</span><span class="tag-chip">quick-question</span><span class="tag-chip">readout</span><span class="tag-chip">survey</span><span class="tag-chip">white-paper</span>
+        <span class="tag-chip">editorial</span><span class="tag-chip">graphics</span><span class="tag-chip">ux-research</span><span class="tag-chip">operations</span><span class="tag-chip">video</span><span class="tag-chip">data-analysis</span>
       </div>
-      <div class="tag-purpose">Replaces the need for separate phases like "January Report" vs "October Update". One Content Production phase + this tag = clean data without phase sprawl. Enables cross-monitor reporting on deliverable mix.</div>
-      <div class="tag-example"><span>Phase:</span> Content Production &nbsp;·&nbsp; <span>Tag:</span> update<br>→ replaces "2025-11 November Update"</div>
+      <div class="tag-purpose">Solves the cross-team attribution problem. When editorial or graphics contributes to a monitor, they log under that monitor project and tag their function. This is the only way to report total editorial or graphics hours <em>across all projects</em> — tasks can't do this because they're project-scoped.</div>
+      <div class="tag-example"><span>Project:</span> Bank Monitor 2026 &nbsp;·&nbsp; <span>Phase:</span> Quality Review &nbsp;·&nbsp; <span>Tag:</span> editorial &nbsp;·&nbsp; <span>Task:</span> Q4 Report Edit<br>→ editor's time attributed correctly; task identifies the specific deliverable</div>
     </div>
 
     <div class="tag-card">
@@ -935,85 +1012,154 @@
       <div class="tags-row">
         <span class="tag-chip">web</span><span class="tag-chip">mobile</span><span class="tag-chip">desktop</span><span class="tag-chip">app</span><span class="tag-chip">public-site</span><span class="tag-chip">secure-site</span>
       </div>
-      <div class="tag-purpose">Replaces channel-specific phase variants like "Mobile Report" vs "Website Report". Enables cross-monitor analysis of how time splits across digital channels.</div>
-      <div class="tag-example"><span>Phase:</span> Research &amp; Data Collection &nbsp;·&nbsp; <span>Tag:</span> mobile<br>→ replaces "Mobile grading process"</div>
+      <div class="tag-purpose">Enables cross-monitor analysis of how time splits across digital channels — a question tasks can't answer because they're project-scoped. "How much total mobile time did we spend across all monitors this quarter?" is a tag question.</div>
+      <div class="tag-example"><span>Phase:</span> Research &amp; Data Collection &nbsp;·&nbsp; <span>Tag:</span> mobile &nbsp;·&nbsp; <span>Task:</span> Mobile Grading — Nov<br>→ tag enables cross-monitor channel reporting; task names the specific sprint</div>
     </div>
 
     <div class="tag-card">
-      <div class="tag-list-name">Contributing Team</div>
-      <div class="tag-used-in">All project types</div>
+      <div class="tag-list-name">Entry Flags <span style="font-weight:400;font-size:12px;color:#9aa5be;">(2 tags only)</span></div>
+      <div class="tag-used-in">Monitor Products · Custom &amp; Benchmarks · Client Requests</div>
       <div class="tags-row">
-        <span class="tag-chip">editorial</span><span class="tag-chip">graphics</span><span class="tag-chip">ux-research</span><span class="tag-chip">operations</span><span class="tag-chip">video</span><span class="tag-chip">data-analysis</span>
+        <span class="tag-chip">ad-hoc</span><span class="tag-chip">cross-monitor</span>
       </div>
-      <div class="tag-purpose">Solves the cross-team attribution problem. When editorial or graphics contributes to a monitor, they log under that monitor project and tag their function. Enables cross-project reporting on editorial hours, design hours, etc. without separate projects.</div>
-      <div class="tag-example"><span>Project:</span> Bank Monitor 2026 &nbsp;·&nbsp; <span>Phase:</span> Quality Review &nbsp;·&nbsp; <span>Tag:</span> editorial<br>→ editor's time attributed correctly</div>
+      <div class="tag-purpose"><strong>ad-hoc</strong> flags unplanned one-off client work for billing review — useful for tracking unplanned burden and contract renegotiation conversations. <strong>cross-monitor</strong> flags work spanning multiple monitors for attribution. Both are genuinely cross-project signals that tasks can't capture. Other Client Work Type tags (retainer, renewal, new-business) belong in the project name or description, not on individual entries.</div>
+      <div class="tag-example"><span>Phase:</span> Client Delivery &amp; Support &nbsp;·&nbsp; <span>Tag:</span> ad-hoc<br>→ flags unplanned request; filter ad-hoc across all monitors = total unplanned client burden</div>
     </div>
 
-    <div class="tag-card">
-      <div class="tag-list-name">Client Work Type</div>
-      <div class="tag-used-in">Monitor Products · Custom &amp; Benchmarks</div>
-      <div class="tags-row">
-        <span class="tag-chip">ad-hoc</span><span class="tag-chip">retainer</span><span class="tag-chip">renewal</span><span class="tag-chip">new-business</span><span class="tag-chip">cross-monitor</span>
-      </div>
-      <div class="tag-purpose">Distinguishes the nature of client engagement without requiring separate projects. "ad-hoc" flags one-off client requests. "cross-monitor" flags work spanning multiple monitors. "retainer" tracks ongoing client relationships.</div>
-      <div class="tag-example"><span>Phase:</span> Client Delivery &amp; Support &nbsp;·&nbsp; <span>Tag:</span> ad-hoc<br>→ flags unplanned client request for billing review</div>
+    <!-- REMOVED section -->
+    <div class="block-title" style="margin-top:36px;">❌ Removed from Tags — Replaced by Tasks</div>
+    <div class="section-intro" style="background:#FFF5F5;border-left-color:#E74C3C;color:#5a2a2a;">
+      These 5 tag lists have been retired. The specifics they captured belong as <strong>Task names</strong> within the relevant phase — more informative, more searchable, and scoped to the project where they matter.
     </div>
 
-    <div class="tag-card">
-      <div class="tag-list-name">Project Stage Flag</div>
-      <div class="tag-used-in">Custom &amp; Benchmarks · UX Research</div>
-      <div class="tags-row">
-        <span class="tag-chip">scoping</span><span class="tag-chip">pilot</span><span class="tag-chip">active</span><span class="tag-chip">wrap-up</span><span class="tag-chip">post-project</span>
-      </div>
-      <div class="tag-purpose">Particularly useful for custom projects where the same phase name appears at different lifecycle stages. Helps PMs see at a glance where projects are across the portfolio without opening each one.</div>
-      <div class="tag-example"><span>Phase:</span> Business Development &amp; Scoping &nbsp;·&nbsp; <span>Tag:</span> scoping<br><span>Phase:</span> Final Delivery &nbsp;·&nbsp; <span>Tag:</span> wrap-up</div>
+    <div style="background:white;border-radius:10px;overflow:hidden;box-shadow:0 1px 4px rgba(23,40,82,0.07);margin-bottom:28px;">
+      <table style="width:100%;border-collapse:collapse;font-size:13px;">
+        <thead>
+          <tr>
+            <th style="background:#C62828;color:white;padding:12px 16px;text-align:left;font-size:11px;letter-spacing:0.8px;text-transform:uppercase;">Old Tag List</th>
+            <th style="background:#C62828;color:white;padding:12px 16px;text-align:left;font-size:11px;letter-spacing:0.8px;text-transform:uppercase;">Old Tags</th>
+            <th style="background:#C62828;color:white;padding:12px 16px;text-align:left;font-size:11px;letter-spacing:0.8px;text-transform:uppercase;">Why Removed / What Replaces It</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom:1px solid #edf0f7;">
+            <td style="padding:12px 16px;font-weight:600;color:#999;font-style:italic;">Deliverable Type</td>
+            <td style="padding:12px 16px;color:#bbb;font-size:12px;">report | update | matrix | benchmark | presentation…</td>
+            <td style="padding:12px 16px;">Use a <strong>Task</strong> named for the specific deliverable: e.g. <em>"November Update"</em> or <em>"Q4 Matrix"</em> inside Content Production. More informative than a generic tag.</td>
+          </tr>
+          <tr style="border-bottom:1px solid #edf0f7;background:#f9f9f9;">
+            <td style="padding:12px 16px;font-weight:600;color:#999;font-style:italic;">Project Stage Flag</td>
+            <td style="padding:12px 16px;color:#bbb;font-size:12px;">scoping | pilot | active | wrap-up | post-project</td>
+            <td style="padding:12px 16px;">Redundant — your <strong>phases already answer this</strong>. If you're in Business Development &amp; Scoping, you're in the scoping stage. No tag needed.</td>
+          </tr>
+          <tr style="border-bottom:1px solid #edf0f7;">
+            <td style="padding:12px 16px;font-weight:600;color:#999;font-style:italic;">Research Method</td>
+            <td style="padding:12px 16px;color:#bbb;font-size:12px;">moderated | unmoderated | diary | interview | mystery-shop…</td>
+            <td style="padding:12px 16px;">Use a <strong>Task</strong> named for the session: e.g. <em>"Session: JP Morgan – P1"</em> inside Study Field Work. Far more useful than a method tag.</td>
+          </tr>
+          <tr style="border-bottom:1px solid #edf0f7;background:#f9f9f9;">
+            <td style="padding:12px 16px;font-weight:600;color:#999;font-style:italic;">Internal Work Type</td>
+            <td style="padding:12px 16px;color:#bbb;font-size:12px;">hiring | onboarding | performance-review | it-issue…</td>
+            <td style="padding:12px 16px;">Use a <strong>Task</strong> inside Administrative Work: e.g. <em>"Q1 Hiring Cycle"</em> or <em>"Bamboo Migration"</em>. Tasks are self-documenting without polluting the global tag list.</td>
+          </tr>
+          <tr style="border-bottom:1px solid #edf0f7;">
+            <td style="padding:12px 16px;font-weight:600;color:#999;font-style:italic;">Marketing Channel</td>
+            <td style="padding:12px 16px;color:#bbb;font-size:12px;">blog | linkedin | conference | webinar | podcast…</td>
+            <td style="padding:12px 16px;">Use a <strong>Task</strong> for the specific campaign or event: e.g. <em>"SIFMA 2026"</em> or <em>"March Newsletter"</em> inside Marketing &amp; Business Development.</td>
+          </tr>
+          <tr>
+            <td style="padding:12px 16px;font-weight:600;color:#999;font-style:italic;">Client Work Type<br><span style="font-size:11px;font-weight:400;">(partial — ad-hoc &amp; cross-monitor kept)</span></td>
+            <td style="padding:12px 16px;color:#bbb;font-size:12px;">retainer | renewal | new-business</td>
+            <td style="padding:12px 16px;">Project-level metadata — belongs in the <strong>project name or description</strong>, not on individual entries. Only <em>ad-hoc</em> and <em>cross-monitor</em> are kept as Entry Flags above.</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
 
-    <div class="tag-card">
-      <div class="tag-list-name">Research Method</div>
-      <div class="tag-used-in">UX Research projects only</div>
-      <div class="tags-row">
-        <span class="tag-chip">moderated</span><span class="tag-chip">unmoderated</span><span class="tag-chip">diary</span><span class="tag-chip">survey</span><span class="tag-chip">desk-research</span><span class="tag-chip">mystery-shop</span><span class="tag-chip">interview</span>
-      </div>
-      <div class="tag-purpose">Enables UX team to report on methodology mix without separate projects per study type. Useful when multiple studies run in parallel or the same project uses multiple methods.</div>
-      <div class="tag-example"><span>Phase:</span> Study Field Work &nbsp;·&nbsp; <span>Tags:</span> moderated, interview</div>
+    <!-- TASKS section -->
+    <div class="block-title">📋 Tasks — Project-Scoped Detail</div>
+    <div class="section-intro">
+      Tasks live inside a phase within a specific project. They replace the old per-entry tags for deliverable names, session details, campaigns, and initiatives. <strong>Create tasks at the project level before logging begins</strong> (admin or PM responsibility).
     </div>
 
-    <div class="tag-card">
-      <div class="tag-list-name">Internal Work Type</div>
-      <div class="tag-used-in">Internal Operations projects only</div>
-      <div class="tags-row">
-        <span class="tag-chip">hiring</span><span class="tag-chip">onboarding</span><span class="tag-chip">performance-review</span><span class="tag-chip">it-issue</span><span class="tag-chip">admin</span><span class="tag-chip">process-improvement</span>
-      </div>
-      <div class="tag-purpose">Adds granularity to internal ops without creating dozens of phases. Lets you track hiring load, IT friction, and process improvement effort separately within a single "Administrative Work" phase.</div>
-      <div class="tag-example"><span>Phase:</span> Administrative Work &nbsp;·&nbsp; <span>Tags:</span> hiring, it-issue</div>
-    </div>
-
-    <div class="tag-card">
-      <div class="tag-list-name">Marketing Channel</div>
-      <div class="tag-used-in">Internal Operations (Marketing &amp; BD)</div>
-      <div class="tags-row">
-        <span class="tag-chip">blog</span><span class="tag-chip">linkedin</span><span class="tag-chip">conference</span><span class="tag-chip">webinar</span><span class="tag-chip">podcast</span><span class="tag-chip">press</span><span class="tag-chip">awards</span>
-      </div>
-      <div class="tag-purpose">Breaks down marketing effort by channel without separate projects. Enables reporting on content mix and conference ROI without cluttering the main project list.</div>
-      <div class="tag-example"><span>Phase:</span> Marketing &amp; Business Development &nbsp;·&nbsp; <span>Tags:</span> conference, linkedin</div>
+    <div style="background:white;border-radius:10px;overflow:hidden;box-shadow:0 1px 4px rgba(23,40,82,0.07);margin-bottom:28px;">
+      <table style="width:100%;border-collapse:collapse;font-size:13px;">
+        <thead>
+          <tr>
+            <th style="background:#172852;color:white;padding:12px 16px;text-align:left;font-size:11px;letter-spacing:0.8px;text-transform:uppercase;white-space:nowrap;">Project Type</th>
+            <th style="background:#172852;color:white;padding:12px 16px;text-align:left;font-size:11px;letter-spacing:0.8px;text-transform:uppercase;">Phase</th>
+            <th style="background:#172852;color:white;padding:12px 16px;text-align:left;font-size:11px;letter-spacing:0.8px;text-transform:uppercase;">Example Tasks</th>
+            <th style="background:#172852;color:white;padding:12px 16px;text-align:left;font-size:11px;letter-spacing:0.8px;text-transform:uppercase;">What It Replaces / Enables</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom:1px solid #edf0f7;">
+            <td style="padding:12px 16px;font-weight:700;color:#2E86C1;white-space:nowrap;">Monitor Products</td>
+            <td style="padding:12px 16px;font-weight:600;color:#007E8F;">Content Production</td>
+            <td style="padding:12px 16px;color:#4169C9;">November Update<br>Q3 Report<br>December Matrix</td>
+            <td style="padding:12px 16px;">Replaces Deliverable Type tags. Task name carries the specific deliverable — filterable within the project.</td>
+          </tr>
+          <tr style="border-bottom:1px solid #edf0f7;background:#f6f8fc;">
+            <td style="padding:12px 16px;font-weight:700;color:#2E86C1;white-space:nowrap;">Monitor Products</td>
+            <td style="padding:12px 16px;font-weight:600;color:#007E8F;">Research &amp; Data Collection</td>
+            <td style="padding:12px 16px;color:#4169C9;">Pace of Change — Nov<br>LiGRE Tagging Sprint<br>Industry News Sweep</td>
+            <td style="padding:12px 16px;">Replaces date-specific research phase variants. One standard phase + specific task = clean data.</td>
+          </tr>
+          <tr style="border-bottom:1px solid #edf0f7;">
+            <td style="padding:12px 16px;font-weight:700;color:#1E8449;white-space:nowrap;">Custom &amp; Benchmarks</td>
+            <td style="padding:12px 16px;font-weight:600;color:#007E8F;">Data Collection &amp; Research</td>
+            <td style="padding:12px 16px;color:#4169C9;">Web Grading — Round 1<br>Survey Fielding<br>Screenshot Capture — Mobile</td>
+            <td style="padding:12px 16px;">Replaces the 4+ grading phase variants. Round, wave, or pass becomes the task name.</td>
+          </tr>
+          <tr style="border-bottom:1px solid #edf0f7;background:#f6f8fc;">
+            <td style="padding:12px 16px;font-weight:700;color:#1E8449;white-space:nowrap;">Custom &amp; Benchmarks</td>
+            <td style="padding:12px 16px;font-weight:600;color:#007E8F;">Analysis &amp; Production</td>
+            <td style="padding:12px 16px;color:#4169C9;">Draft Report<br>Exec Summary Slides<br>Data Visualization Pass</td>
+            <td style="padding:12px 16px;">Replaces "Report (Benchmark)", "LPL 2025 EoY Refresh", etc. Each distinct deliverable gets its own task.</td>
+          </tr>
+          <tr style="border-bottom:1px solid #edf0f7;">
+            <td style="padding:12px 16px;font-weight:700;color:#7D3C98;white-space:nowrap;">UX Research</td>
+            <td style="padding:12px 16px;font-weight:600;color:#007E8F;">Study Field Work</td>
+            <td style="padding:12px 16px;color:#4169C9;">Session: JP Morgan – P1<br>Session: Chase – P2<br>Refilm: Annuity Module</td>
+            <td style="padding:12px 16px;">Replaces Research Method tags AND session-specific phases. Participant detail goes in the task name. Suggested format: <em>"Session: [Client] – [Participant ID]"</em></td>
+          </tr>
+          <tr style="border-bottom:1px solid #edf0f7;background:#f6f8fc;">
+            <td style="padding:12px 16px;font-weight:700;color:#F9A825;white-space:nowrap;">Internal Operations</td>
+            <td style="padding:12px 16px;font-weight:600;color:#007E8F;">Administrative Work</td>
+            <td style="padding:12px 16px;color:#4169C9;">Q1 Hiring Cycle<br>Bamboo System Migration<br>Semi-Annual Reviews — Spring</td>
+            <td style="padding:12px 16px;">Replaces Internal Work Type tags. Task names are self-documenting and capture the specific initiative, not just a category.</td>
+          </tr>
+          <tr style="border-bottom:1px solid #edf0f7;">
+            <td style="padding:12px 16px;font-weight:700;color:#F9A825;white-space:nowrap;">Internal Operations</td>
+            <td style="padding:12px 16px;font-weight:600;color:#007E8F;">Marketing &amp; Business Development</td>
+            <td style="padding:12px 16px;color:#4169C9;">SIFMA 2026 Conference<br>March Newsletter<br>LinkedIn: AI in Wealth Mgmt</td>
+            <td style="padding:12px 16px;">Replaces Marketing Channel tags with actual campaign/event names. Filter tasks within the project to see time by campaign.</td>
+          </tr>
+          <tr style="background:#f6f8fc;">
+            <td style="padding:12px 16px;font-weight:700;color:#C62828;white-space:nowrap;">Client Requests</td>
+            <td style="padding:12px 16px;font-weight:600;color:#007E8F;">Research &amp; Fulfillment</td>
+            <td style="padding:12px 16px;color:#4169C9;">Schwab Screenshots — Dec<br>Spanish Comms Pull<br>Ameriprise Q4 Data</td>
+            <td style="padding:12px 16px;">Biggest single cleanup: replaces 130+ date-named phases. Date and topic move to the task name; Notes field for detail.</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
 
     <div class="tag-rules">
-      <h3>📋 Tag Governance Rules</h3>
-      <div class="rule-item"><div class="rule-bullet"></div><div>Require minimum 1 tag per entry (enable in Timeneye workspace settings) — only after lists are finalized.</div></div>
-      <div class="rule-item"><div class="rule-bullet"></div><div>Tags are entry-level only — they cannot be assigned to projects or phases (by design in Timeneye).</div></div>
-      <div class="rule-item"><div class="rule-bullet"></div><div>Restrict tag lists per project: Time Off project shows NO tags; Monitor projects show Deliverable Type + Work Channel + Contributing Team.</div></div>
-      <div class="rule-item"><div class="rule-bullet"></div><div>Do NOT replicate phase names as tags (e.g., don't create a "report" tag AND a "Report" phase — pick one).</div></div>
-      <div class="rule-item"><div class="rule-bullet"></div><div>Admin/Owner role maintains tag lists — regular members can select but not create new tags.</div></div>
-      <div class="rule-item"><div class="rule-bullet"></div><div>Review tag usage quarterly; retire unused tags to prevent creep.</div></div>
+      <h3>📋 Governance Rules — Tags &amp; Tasks</h3>
+      <div class="rule-item"><div class="rule-bullet"></div><div><strong>Tags:</strong> Require minimum 1 tag per entry from the 3 approved lists — enable in Timeneye workspace settings once lists are finalized.</div></div>
+      <div class="rule-item"><div class="rule-bullet"></div><div><strong>Tags:</strong> Time Off project shows NO tags. Monitor projects show Work Channel + Contributing Team. Client Requests projects show Entry Flags only.</div></div>
+      <div class="rule-item"><div class="rule-bullet"></div><div><strong>Tags:</strong> Admin/Owner role maintains tag lists — regular members can select but not create. Review tag usage quarterly; retire unused tags to prevent creep.</div></div>
+      <div class="rule-item"><div class="rule-bullet"></div><div><strong>Tasks:</strong> Create tasks at the project level before logging begins (admin or PM responsibility). Tasks are optional for simple internal entries like routine team meetings.</div></div>
+      <div class="rule-item"><div class="rule-bullet"></div><div><strong>Tasks:</strong> Agree on naming conventions per project type before rollout — consistency makes filtering useful.</div></div>
+      <div class="rule-item"><div class="rule-bullet"></div><div><strong>Both:</strong> Do NOT replicate phase names as tags or tasks. If the phase already captures the information, no tag or task is needed.</div></div>
     </div>
   </div>
 
   <!-- ── TAB 5: COLOR CODING ── -->
   <div id="tab-colors" class="tab-pane">
     <div class="section-intro">
-      Col&#x200B;or-code projects by type so employees can instantly navigate to the right project. Within each col&#x200B;or family, use lighter shades for sub-projects and darker for the primary monitor or project.
+      Color-code projects by type so employees can instantly navigate to the right project. Within each color family, use lighter shades for sub-projects and darker for the primary monitor or project.
     </div>
 
     <div class="color-grid">
@@ -1021,8 +1167,8 @@
         <div class="color-swatch" style="background:#2E86C1;"></div>
         <div class="color-body">
           <div class="color-hex">#2E86C1</div>
-          <div class="color-type">Monitor Products</div>
-          <div class="color-rationale">Your highest-volume projects. A single recognizable col&#x200B;or family means analysts can immediately spot their monitor without reading every word.</div>
+          <div class="color-type">Monitor Products — Blue</div>
+          <div class="color-rationale">Your highest-volume projects. A single recognizable blue family means analysts can immediately spot their monitor without reading every word.</div>
           <div class="color-examples">
             <span class="ex-chip">Bank Monitor 2026</span>
             <span class="ex-chip">e-Monitor 2026</span>
@@ -1035,8 +1181,8 @@
         <div class="color-swatch" style="background:#1E8449;"></div>
         <div class="color-body">
           <div class="color-hex">#1E8449</div>
-          <div class="color-type">Custom Projects &amp; Benchmarks</div>
-          <div class="color-rationale">Custom work is variable in scope. A distinct col&#x200B;or from monitors helps project managers and contributors quickly distinguish client project work from monitor subscriptions.</div>
+          <div class="color-type">Custom Projects &amp; Benchmarks — Green</div>
+          <div class="color-rationale">Custom work is variable in scope. A distinct green helps project managers and contributors quickly distinguish client project work from monitor subscriptions.</div>
           <div class="color-examples">
             <span class="ex-chip">IHG Cobranded Card Benchmark</span>
             <span class="ex-chip">2026 CCM Benchmark</span>
@@ -1048,7 +1194,7 @@
         <div class="color-swatch" style="background:#7D3C98;"></div>
         <div class="color-body">
           <div class="color-hex">#7D3C98</div>
-          <div class="color-type">UX Research</div>
+          <div class="color-type">UX Research — Purple</div>
           <div class="color-rationale">UX work has a distinct workflow (fieldwork, filming, moderation) easy to confuse with other project types. Purple creates clear visual separation for the UX team.</div>
           <div class="color-examples">
             <span class="ex-chip">Digital Badging UX Research</span>
@@ -1058,39 +1204,51 @@
         </div>
       </div>
       <div class="color-card">
-        <div class="color-swatch" style="background:#B7950B;"></div>
+        <div class="color-swatch" style="background:#C62828;"></div>
         <div class="color-body">
-          <div class="color-hex">#B7950B</div>
-          <div class="color-type">Internal Operations</div>
-          <div class="color-rationale">Non-billable internal work should feel visually distinct from client-facing work. Warm amber acts as a reminder that time logged here doesn't generate revenue.</div>
+          <div class="color-hex">#C62828</div>
+          <div class="color-type">Client Requests — Red</div>
+          <div class="color-rationale">Ad-hoc client request projects are distinct from ongoing monitors and custom work. Red makes them immediately visible and easy to find when an urgent ask comes in.</div>
+          <div class="color-examples">
+            <span class="ex-chip">Chase | Client Requests 2026</span>
+            <span class="ex-chip">Fidelity | Client Requests 2026</span>
+            <span class="ex-chip">Schwab | Client Requests 2026</span>
+          </div>
+        </div>
+      </div>
+      <div class="color-card">
+        <div class="color-swatch" style="background:#D81B60;"></div>
+        <div class="color-body">
+          <div class="color-hex">#D81B60</div>
+          <div class="color-type">Business Systems Management — Pink</div>
+          <div class="color-rationale">Systems and ops work (Timeneye admin, data migrations, reporting) is non-billable but distinct from general internal operations. A separate color keeps it from getting buried in the yellow internal ops projects.</div>
+          <div class="color-examples">
+            <span class="ex-chip">Business Systems Management</span>
+            <span class="ex-chip">Timeneye Restructuring 2026</span>
+          </div>
+        </div>
+      </div>
+      <div class="color-card">
+        <div class="color-swatch" style="background:#F9A825;"></div>
+        <div class="color-body">
+          <div class="color-hex">#F9A825</div>
+          <div class="color-type">Internal Operations — Yellow</div>
+          <div class="color-rationale">Non-billable internal work should feel visually distinct from client-facing work. Yellow acts as a soft reminder that time logged here doesn't generate revenue — easy to spot and avoid accidentally logging client time.</div>
           <div class="color-examples">
             <span class="ex-chip">Administrative (Monitors)</span>
-            <span class="ex-chip">Document Management</span>
             <span class="ex-chip">Hiring, Onboarding &amp; Training</span>
-            <span class="ex-chip">Conference / Marketing</span>
+            <span class="ex-chip">Conference / Marketing Efforts</span>
           </div>
         </div>
       </div>
       <div class="color-card">
-        <div class="color-swatch" style="background:#717D7E;"></div>
+        <div class="color-swatch" style="background:#E65100;"></div>
         <div class="color-body">
-          <div class="color-hex">#717D7E</div>
-          <div class="color-type">Time Off</div>
-          <div class="color-rationale">Neutral gray signals this is entirely separate from work projects. It should be the most visually quiet option in the list — easy to find, impossible to confuse.</div>
+          <div class="color-hex">#E65100</div>
+          <div class="color-type">Time Off — Orange</div>
+          <div class="color-rationale">Time off is entirely separate from all work projects and should be instantly recognizable. Orange is warm and distinct — easy to find quickly, impossible to confuse with any client or internal project.</div>
           <div class="color-examples">
             <span class="ex-chip">Time Off (all phases)</span>
-          </div>
-        </div>
-      </div>
-      <div class="color-card">
-        <div class="color-swatch" style="background:#E74C3C;"></div>
-        <div class="color-body">
-          <div class="color-hex">#E74C3C</div>
-          <div class="color-type">⚠ Scoping / BD (Active)</div>
-          <div class="color-rationale">Optional: a distinct accent col&#x200B;or for active scoping projects so sales and BD staff can find them quickly. Archive 2025 scoping projects to remove clutter.</div>
-          <div class="color-examples">
-            <span class="ex-chip">2026 | Farm Bureau | Scoping</span>
-            <span class="ex-chip">2026 | BofA | Scoping</span>
           </div>
         </div>
       </div>
@@ -1099,17 +1257,17 @@
     <div class="color-tips">
       <div class="block-title" style="margin-top:0;">🎨 Implementation Tips</div>
       <div class="rule-item"><div class="rule-bullet"></div><div>Set colors when creating or migrating 2026 projects — don't wait until all projects exist.</div></div>
-      <div class="rule-item"><div class="rule-bullet"></div><div>Favorite pinned projects appear at top of list; col&#x200B;or + favorite = fastest possible navigation for regular users.</div></div>
-      <div class="rule-item"><div class="rule-bullet"></div><div>Lighter shades within a col&#x200B;or family can distinguish sub-types (e.g., lighter blue for client request sub-projects under a monitor).</div></div>
-      <div class="rule-item"><div class="rule-bullet"></div><div>Archived projects lose visibility in the main list — archive 2025 projects after migration to keep the col&#x200B;or-coded list clean.</div></div>
-      <div class="rule-item"><div class="rule-bullet"></div><div>Add a project description (Timeneye feature) alongside col&#x200B;or so employees see a tooltip explaining what to log there.</div></div>
+      <div class="rule-item"><div class="rule-bullet"></div><div>Favorite pinned projects appear at top of list; color + favorite = fastest possible navigation for regular users.</div></div>
+      <div class="rule-item"><div class="rule-bullet"></div><div>Lighter shades within a color family can distinguish sub-types (e.g., lighter blue for client request sub-projects under a monitor).</div></div>
+      <div class="rule-item"><div class="rule-bullet"></div><div>Archived projects lose visibility in the main list — archive 2025 projects after migration to keep the color-coded list clean.</div></div>
+      <div class="rule-item"><div class="rule-bullet"></div><div>Add a project description (Timeneye feature) alongside color so employees see a tooltip explaining what to log there.</div></div>
     </div>
   </div>
 
   <!-- ── TAB 6: SCENARIOS ── -->
   <div id="tab-scenarios" class="tab-pane">
     <div class="section-intro">
-      Real-world entry examples showing how the three metadata layers — <strong>Project Col&#x200B;or</strong>, <strong>Phase + Category</strong>, and <strong>Tags</strong> — combine to produce clean, reportable data.
+      Real-world entry examples showing how the three metadata layers — <strong>Project Col<span></span>or</strong>, <strong>Phase + Category</strong>, and <strong>Tags</strong> — combine to produce clean, reportable data.
     </div>
 
     <div id="scenarios-container"></div>
@@ -1128,36 +1286,119 @@ function showTab(id, btn) {
 
 // ── Phase Mapping Data ──
 const mappingData = [
+  // ARCHIVE
   {phase:"General",hours:737,bill:"68%",type:"Multiple",action:"ARCHIVE",newPhase:"RETIRE",notes:"62 uses across projects; ambiguous billability. Replace with specific new-taxonomy phase."},
   {phase:"2025 Grading",hours:3,bill:"100%",type:"Custom & Benchmarks",action:"ARCHIVE",newPhase:"3. Data Collection & Research",notes:"Year-specific phase—use standard phase going forward."},
   {phase:"Catching up from time off",hours:110,bill:"0%",type:"Internal Operations",action:"ARCHIVE",newPhase:"1. Administrative Work",notes:"Log as regular admin work; retire this phase."},
   {phase:"Urgent Asks (DONT USE THIS)",hours:1,bill:"100%",type:"Multiple",action:"ARCHIVE",newPhase:"RETIRE IMMEDIATELY",notes:"Phase explicitly marked do-not-use. Archive and redirect."},
+  // REVIEW
   {phase:"Industry Research",hours:139,bill:"46%",type:"Monitor Products",action:"REVIEW",newPhase:"2. Research & Data Collection",notes:"Mixed billability (46%). Clarify which entries should be billable."},
-  {phase:"Collateral / Collateral Processing",hours:556,bill:"47%",type:"Monitor Products",action:"REVIEW",newPhase:"6. Product Maintenance",notes:"Mixed billability. Review and align."},
+  {phase:"Collateral / Collateral Processing",hours:556,bill:"47%",type:"Monitor Products",action:"REVIEW",newPhase:"6. Product Maintenance",notes:"Mixed billability (Collateral Processing = 0%, Collateral = 94%). Review and align."},
   {phase:"Cross-Monitor Planning [Directors]",hours:84,bill:"100%",type:"Multiple",action:"REVIEW",newPhase:"1. Planning & Scoping",notes:"Internal planning meeting logged as billable—review classification."},
   {phase:"Assisting Other Teams",hours:96,bill:"100%",type:"Multiple",action:"REVIEW",newPhase:"— (use project-specific phase)",notes:"Should be logged under the project being assisted, not a generic phase."},
-  {phase:"Project Scoping",hours:59,bill:"89%",type:"Monitor Products",action:"REVIEW",newPhase:"1. Planning & Scoping",notes:"High billable % for a scoping phase—should be NON-BILLABLE per taxonomy."},
-  {phase:"Ameriprise - Custom / Bank of America - Custom",hours:286,bill:"100%",type:"Custom & Benchmarks",action:"REVIEW",newPhase:"4. Analysis & Production",notes:"Client name in phase name—redundant if client is project metadata."},
+  {phase:"Project Scoping",hours:59,bill:"89%",type:"Monitor Products",action:"REVIEW",newPhase:"1. Planning & Scoping",notes:"High billable % for a scoping phase—should be NON-BILLABLE per taxonomy. Review."},
+  {phase:"Ameriprise - Custom / Bank of America - Custom",hours:286,bill:"100%",type:"Custom & Benchmarks",action:"REVIEW",newPhase:"4. Analysis & Production",notes:"Client name in phase name—redundant if client is project metadata. Consider removing."},
   {phase:"Webinars (Benchmark)",hours:23,bill:"0%",type:"Custom & Benchmarks",action:"REVIEW",newPhase:"1. Business Development & Scoping",notes:"Non-billable webinars—confirm if BD or internal."},
   {phase:"Study Prep",hours:181,bill:"41%",type:"UX Research",action:"REVIEW",newPhase:"1. Study Planning & Design",notes:"Mixed billability (41%)—most study prep should be billable. Review entries."},
   {phase:"Study Analysis & Reporting",hours:136,bill:"37%",type:"UX Research",action:"REVIEW",newPhase:"4. Analysis & Reporting",notes:"Mixed billability (37%)—analysis should be billable. Review entries."},
   {phase:"Study Support",hours:72,bill:"17%",type:"UX Research",action:"REVIEW",newPhase:"3. Study Field Work",notes:"Very low billable % (17%)—should study support be billable? Review."},
-  {phase:"Sales and Project Support (Scoping) 2024",hours:974,bill:"94%",type:"Multiple",action:"REVIEW",newPhase:"1. Planning & Scoping or 5. Client Delivery & Support",notes:"High hours (974), mostly billable—scoping that is billable may belong in Client Delivery."},
-  {phase:"Administrative (Monitors)",hours:1296,bill:"0%",type:"Internal Operations",action:"REVIEW",newPhase:"1. Administrative Work",notes:"High hours (1,296) in a catch-all project. Review whether entries should log under specific monitor projects."},
-  {phase:"Editing / Editorial (various)",hours:799,bill:"0%",type:"Multiple",action:"REVIEW",newPhase:"4. Quality Review & Finalization",notes:"Editing is non-billable here but likely billable on specific monitor projects."},
+  {phase:"Sales and Project Support (Scoping) 2024",hours:974,bill:"94%",type:"Multiple",action:"REVIEW",newPhase:"1. Planning & Scoping or 5. Client Delivery & Support",notes:"High hours (974), mostly billable—scoping that is billable may belong in Client Delivery. Review with manager."},
+  {phase:"Administrative (Monitors)",hours:1296,bill:"0%",type:"Internal Operations",action:"REVIEW",newPhase:"1. Administrative Work",notes:"High hours (1,296) in a catch-all project. Review whether entries should be logged under specific monitor projects."},
+  {phase:"Editing / Editorial (various)",hours:799,bill:"0%",type:"Multiple",action:"REVIEW",newPhase:"4. Quality Review & Finalization",notes:"Editing is non-billable here but likely billable on specific monitor projects. Review project assignment."},
   {phase:"Document Management (project)",hours:1124,bill:"0%",type:"Internal Operations",action:"REVIEW",newPhase:"1. Administrative Work",notes:"High-use internal project. Confirm all entries are truly non-billable ops vs. billable client work."},
-  {phase:"UX (phase)",hours:702,bill:"0%",type:"Multiple",action:"REVIEW",newPhase:"— (use project-specific phase)",notes:"700+ hrs logged to a phase simply called 'UX'—too vague."},
-  {phase:"[Month] Report (all variants)",hours:4800,bill:"99%",type:"Monitor Products",action:"CONSOLIDATE",newPhase:"3. Content Production",notes:"30+ date-specific phases. Standardize to one phase per project."},
+  {phase:"UX (phase)",hours:702,bill:"0%",type:"Multiple",action:"REVIEW",newPhase:"— (use project-specific phase)",notes:"702 hrs logged to a phase simply called 'UX'—too vague. Employees should log under specific UX phases."},
+  {phase:"Morgan Stanley (phase used in CR project)",hours:22,bill:"100%",type:"Client Requests",action:"REVIEW",newPhase:"— (use project + Notes)",notes:"Phase name is a client name only — no workflow information. Review and reclassify by work type."},
+  // CONSOLIDATE — Monitor Products
+  {phase:"[Month] Report (all variants)",hours:4800,bill:"99%",type:"Monitor Products",action:"CONSOLIDATE",newPhase:"3. Content Production",notes:"30+ date-specific phases (Jan Report, 2025-11 November Report, etc.). Standardize to one phase per project."},
   {phase:"[Month] Update (all variants)",hours:2800,bill:"99%",type:"Monitor Products",action:"CONSOLIDATE",newPhase:"3. Content Production",notes:"Similar proliferation of date-specific update phases. Consolidate into single phase per project."},
   {phase:"Industry News / Industry news research",hours:228,bill:"100%",type:"Monitor Products",action:"CONSOLIDATE",newPhase:"2. Research & Data Collection",notes:"Two near-duplicate phases. Consolidate into one."},
   {phase:"Binder Maintenance / Binder Management / Binder refresh",hours:478,bill:"99%",type:"Monitor Products",action:"CONSOLIDATE",newPhase:"6. Product Maintenance",notes:"Three variants of same activity. Consolidate."},
   {phase:"Client Requests / Client Request / Ad-hoc ask",hours:149,bill:"97%",type:"Monitor Products",action:"CONSOLIDATE",newPhase:"5. Client Delivery & Support",notes:"Three near-duplicate phases. Consolidate into one."},
-  {phase:"Scoping / Project Scoping / Report Scoping / Scope",hours:153,bill:"82%",type:"Monitor Products",action:"CONSOLIDATE",newPhase:"1. Planning & Scoping",notes:"Four variants of scoping. Consolidate; clarify billability (should be NON-BILLABLE)."},
+  {phase:"Scoping / Project Scoping / Report Scoping / Scope",hours:153,bill:"82%",type:"Monitor Products",action:"CONSOLIDATE",newPhase:"1. Planning & Scoping",notes:"Four variants of scoping. Consolidate; clarify billability (should be NON-BILLABLE per taxonomy)."},
   {phase:"Post Project / Post-Project / Post Project Work",hours:132,bill:"68%",type:"Monitor Products",action:"CONSOLIDATE",newPhase:"6. Product Maintenance",notes:"Three variants. Consolidate; mixed billability needs review."},
   {phase:"Website Report / Web report / Mobile Report / Mobile report",hours:699,bill:"100%",type:"Monitor Products",action:"CONSOLIDATE",newPhase:"3. Content Production",notes:"Specific deliverable variants. Consolidate per monitor type."},
   {phase:"Monitor Improvement / Monitor Improvements",hours:59,bill:"70%",type:"Multiple",action:"CONSOLIDATE",newPhase:"6. Product Maintenance",notes:"Duplicate phases; consolidate and align billability."},
+  // CONSOLIDATE — Custom & Benchmarks
   {phase:"Web grading process / Grading process / Mobile grading process / Grading",hours:730,bill:"100%",type:"Custom & Benchmarks",action:"CONSOLIDATE",newPhase:"3. Data Collection & Research",notes:"Four variants of grading. Consolidate into one standard phase."},
   {phase:"Web framework / Web survey creation",hours:196,bill:"100%",type:"Custom & Benchmarks",action:"CONSOLIDATE",newPhase:"3. Data Collection & Research",notes:"Two variants of methodology/data setup. Consolidate."},
+  {phase:"Experience Benchmark Work / Experience Benchmark",hours:72,bill:"100%",type:"Custom & Benchmarks",action:"CONSOLIDATE",newPhase:"4. Analysis & Production",notes:"Two near-duplicate phases. Consolidate."},
+  {phase:"Docs and Assignments / Docs and assignments",hours:26,bill:"100%",type:"Custom & Benchmarks",action:"CONSOLIDATE",newPhase:"2. Project Planning & Setup",notes:"Two capitalization variants. Consolidate."},
+  {phase:"Survey Design / Survey creation / Web survey weighting",hours:12,bill:"100%",type:"Custom & Benchmarks",action:"CONSOLIDATE",newPhase:"2. Project Planning & Setup",notes:"Three variants of survey setup. Consolidate."},
+  // CONSOLIDATE — UX Research
+  {phase:"Study Field (Moderate) / Study Field (moderate)",hours:116,bill:"50%",type:"UX Research",action:"CONSOLIDATE",newPhase:"3. Study Field Work",notes:"Two capitalization variants + mixed billability. Consolidate and fix."},
+  {phase:"UX Mind Melds / UX Mind Meld",hours:94,bill:"100%",type:"UX Research",action:"CONSOLIDATE",newPhase:"5. Client Presentation",notes:"Two variants. Consolidate."},
+  {phase:"Refilming/editing / Refilming / Binder Refilming / Refilming (Annuity) / Refilming (Life)",hours:168,bill:"100%",type:"UX Research",action:"CONSOLIDATE",newPhase:"3. Study Field Work",notes:"Five variants of same activity. Consolidate into one phase."},
+  {phase:"Checking for refilm / Checking for Refilm / Checking for refilm (annuity) / Checking for Refilm (Life)",hours:115,bill:"100%",type:"UX Research",action:"CONSOLIDATE",newPhase:"3. Study Field Work",notes:"Four variants. Consolidate."},
+  {phase:"UXOD Films / UX Connect Films / Filming / Binder Refilms",hours:31,bill:"100%",type:"UX Research",action:"CONSOLIDATE",newPhase:"3. Study Field Work",notes:"Four variants of filming activities. Consolidate."},
+  // CONSOLIDATE — Internal Operations
+  {phase:"1:1s / 1:1's",hours:1535,bill:"0%",type:"Internal Operations",action:"CONSOLIDATE",newPhase:"2. Team Meetings & Collaboration",notes:"Two capitalization variants. Consolidate."},
+  {phase:"Team meeting / Team Meeting",hours:514,bill:"17%",type:"Internal Operations",action:"CONSOLIDATE",newPhase:"2. Team Meetings & Collaboration",notes:"Two capitalization variants + some entries logged as billable—review."},
+  {phase:"Team Planning / Team planning",hours:447,bill:"8%",type:"Internal Operations",action:"CONSOLIDATE",newPhase:"2. Team Meetings & Collaboration",notes:"Two variants + some billable entries to review. Consolidate."},
+  {phase:"Reviewing emails / Reading/Responding to Emails / Read or Type up Emails/Teams messages",hours:489,bill:"0%",type:"Internal Operations",action:"CONSOLIDATE",newPhase:"1. Administrative Work",notes:"Three variants of same activity. Consolidate."},
+  {phase:"General team trainings / CI-wide trainings / Training Course/Skills Training / Professional development",hours:568,bill:"0%",type:"Internal Operations",action:"CONSOLIDATE",newPhase:"3. Training & Development",notes:"Four variants of training/development. Consolidate."},
+  {phase:"Onboarding meetings / Onboarding prep",hours:271,bill:"0%",type:"Internal Operations",action:"CONSOLIDATE",newPhase:"3. Training & Development",notes:"Two variants. Consolidate."},
+  {phase:"Timeneye maintenance / Administrative work in Timeneye / Timeneye management",hours:240,bill:"0%",type:"Internal Operations",action:"CONSOLIDATE",newPhase:"1. Administrative Work",notes:"Three variants of the same activity. Consolidate."},
+  {phase:"O3 [Name] (various)",hours:145,bill:"0%",type:"Internal Operations",action:"CONSOLIDATE",newPhase:"2. Team Meetings & Collaboration",notes:"Multiple O3 phases (Katie, Davis, etc.). Consolidate into one '1:1 Meetings' phase."},
+  {phase:"Blog post(s) / Blog Posts / Blog Post / Blog",hours:190,bill:"25%",type:"Internal Operations",action:"CONSOLIDATE",newPhase:"4. Marketing & Business Development",notes:"Four variants. Consolidate. Review billable entries."},
+  {phase:"Webinars/webcasts / Webinars/Webcast / Webinar/webcast attendance",hours:212,bill:"0%",type:"Internal Operations",action:"CONSOLIDATE",newPhase:"4. Marketing & Business Development",notes:"Three variants. Consolidate."},
+  {phase:"Conference / Conference Strategy / Conference Research Spotlights",hours:253,bill:"37%",type:"Internal Operations",action:"CONSOLIDATE",newPhase:"4. Marketing & Business Development",notes:"Three variants + mixed billability. Consolidate; review billable entries."},
+  {phase:"Pardot admin / Creating/Updating Emails on Pardot",hours:68,bill:"0%",type:"Internal Operations",action:"CONSOLIDATE",newPhase:"4. Marketing & Business Development",notes:"Two Pardot-related phases. Consolidate."},
+  {phase:"PowerPoint Decks / Infographics / Social Media / LinkedIn",hours:154,bill:"25%",type:"Internal Operations",action:"CONSOLIDATE",newPhase:"4. Marketing & Business Development",notes:"Four marketing content phases. Consolidate."},
+  {phase:"Status Report / Status update",hours:74,bill:"0%",type:"Internal Operations",action:"CONSOLIDATE",newPhase:"1. Administrative Work",notes:"Two variants. Consolidate."},
+  {phase:"Technology issues / Tech Issues",hours:82,bill:"0%",type:"Internal Operations",action:"CONSOLIDATE",newPhase:"1. Administrative Work",notes:"Two variants. Consolidate."},
+  // CONSOLIDATE — Client Requests
+  {phase:"Quick Question / Ad-hoc ask / General / Client Request (generic)",hours:307,bill:"95%",type:"Client Requests",action:"CONSOLIDATE",newPhase:"1. Quick Response",notes:"Four near-identical phases used across 89 CR projects. Consolidate into one."},
+  {phase:"Scoping / Project Scoping / Report Scoping (CR variants)",hours:71,bill:"90%",type:"Client Requests",action:"CONSOLIDATE",newPhase:"2. Scoping & Coordination",notes:"Three scoping variants used in CR projects — consolidate. Note: scoping here is billable unlike in Monitor projects."},
+  {phase:"[MM/YY Request Name] / [Date-named phases]",hours:680,bill:"99%",type:"Client Requests",action:"CONSOLIDATE",newPhase:"3. Research & Fulfillment",notes:"130+ date-named phases (e.g. '12-12-2025 Schwab Screenshots'). Move request topic to Notes field. Consolidate all into this single phase."},
+  {phase:"Project call / Call or Meeting / Monthly Meetings / Quarterly readouts / Orientation call(s) / Readout",hours:265,bill:"98%",type:"Client Requests",action:"CONSOLIDATE",newPhase:"5. Client Meeting & Readout",notes:"Six variants of the same work type. Consolidate into one phase."},
+  {phase:"08/26 Onsite Presentation / [Date-named presentation phases]",hours:101,bill:"100%",type:"Client Requests",action:"CONSOLIDATE",newPhase:"5. Client Meeting & Readout",notes:"Date-specific presentation phases. Move date/topic to Notes. Consolidate into Client Meeting & Readout."},
+  // RENAME — Monitor Products
+  {phase:"Project Work",hours:8598,bill:"91%",type:"Monitor Products",action:"RENAME",newPhase:"3. Content Production",notes:"Most common phase (8,598 hrs). Too generic—rename per project type. Some entries may belong in Research."},
+  {phase:"Pace of Change Tracking",hours:462,bill:"100%",type:"Monitor Products",action:"RENAME",newPhase:"2. Research & Data Collection",notes:"Clear research activity; rename to fit taxonomy."},
+  {phase:"Capabilities Matrix",hours:583,bill:"100%",type:"Monitor Products",action:"RENAME",newPhase:"3. Content Production",notes:"Deliverable creation; maps cleanly to Content Production."},
+  {phase:"Product Matrix",hours:185,bill:"100%",type:"Monitor Products",action:"RENAME",newPhase:"3. Content Production",notes:"Deliverable; maps cleanly."},
+  {phase:"LiGRE Tagging",hours:176,bill:"100%",type:"Monitor Products",action:"RENAME",newPhase:"2. Research & Data Collection",notes:"Data/research activity; rename."},
+  {phase:"Report Meetings",hours:76,bill:"100%",type:"Monitor Products",action:"RENAME",newPhase:"5. Client Delivery & Support",notes:"Client-facing meetings; rename."},
+  {phase:"Quick Question (email response only)",hours:96,bill:"95%",type:"Monitor Products",action:"RENAME",newPhase:"5. Client Delivery & Support",notes:"Client support activity; rename."},
+  {phase:"Template updates",hours:46,bill:"100%",type:"Monitor Products",action:"RENAME",newPhase:"6. Product Maintenance",notes:"Maintenance activity; rename."},
+  {phase:"Consolidated Document Updating",hours:44,bill:"100%",type:"Monitor Products",action:"RENAME",newPhase:"6. Product Maintenance",notes:"Maintenance activity; rename."},
+  {phase:"Survey Work",hours:94,bill:"100%",type:"Monitor Products",action:"RENAME",newPhase:"2. Research & Data Collection",notes:"Research activity; rename."},
+  {phase:"Executive Presentation",hours:33,bill:"100%",type:"Monitor Products",action:"RENAME",newPhase:"5. Client Delivery & Support",notes:"Client delivery activity; rename."},
+  {phase:"Deliverable planning",hours:79,bill:"100%",type:"Monitor Products",action:"RENAME",newPhase:"1. Planning & Scoping",notes:"Planning activity, but flagged as billable—confirm with manager."},
+  {phase:"News Huddle",hours:19,bill:"100%",type:"Monitor Products",action:"RENAME",newPhase:"2. Research & Data Collection",notes:"Research/intel gathering; rename."},
+  // RENAME — Custom & Benchmarks
+  {phase:"LPL 2025 EoY Refresh",hours:81,bill:"100%",type:"Custom & Benchmarks",action:"RENAME",newPhase:"4. Analysis & Production",notes:"Specific benchmark work; rename to standard phase."},
+  {phase:"Report (Benchmark)",hours:62,bill:"100%",type:"Custom & Benchmarks",action:"RENAME",newPhase:"4. Analysis & Production",notes:"Rename to distinguish from Monitor report phases."},
+  {phase:"Quality assurance (QA)",hours:16,bill:"100%",type:"Custom & Benchmarks",action:"RENAME",newPhase:"5. Quality Assurance",notes:"Already matches taxonomy concept; rename to standard."},
+  {phase:"Readout",hours:5,bill:"100%",type:"Custom & Benchmarks",action:"RENAME",newPhase:"6. Final Delivery",notes:"Client delivery; rename."},
+  // RENAME — UX Research
+  {phase:"UX Connect Doc Management",hours:41,bill:"100%",type:"UX Research",action:"RENAME",newPhase:"1. Study Planning & Design",notes:"Document setup/management; rename."},
+  {phase:"Docs and assignments (UX)",hours:18,bill:"100%",type:"UX Research",action:"RENAME",newPhase:"1. Study Planning & Design",notes:"Rename to avoid confusion with Benchmark version."},
+  {phase:"Deliverable Improvement",hours:29,bill:"100%",type:"UX Research",action:"RENAME",newPhase:"4. Analysis & Reporting",notes:"Report/analysis improvement; rename."},
+  // RENAME — Internal Operations
+  {phase:"Weekly huddle",hours:529,bill:"0%",type:"Internal Operations",action:"RENAME",newPhase:"2. Team Meetings & Collaboration",notes:"Rename to standard phase."},
+  {phase:"Answering teams messages",hours:482,bill:"0%",type:"Internal Operations",action:"RENAME",newPhase:"1. Administrative Work",notes:"Admin communication; rename."},
+  {phase:"Social Events / Happy Hour / Clubs",hours:395,bill:"0%",type:"Internal Operations",action:"RENAME",newPhase:"2. Team Meetings & Collaboration",notes:"Team culture events; rename."},
+  {phase:"Cross-team meetings",hours:261,bill:"0%",type:"Internal Operations",action:"RENAME",newPhase:"2. Team Meetings & Collaboration",notes:"Rename."},
+  {phase:"Support for other teams",hours:224,bill:"0%",type:"Internal Operations",action:"RENAME",newPhase:"1. Administrative Work",notes:"Rename."},
+  {phase:"Research/Taxonomy Project",hours:205,bill:"0%",type:"Internal Operations",action:"RENAME",newPhase:"1. Administrative Work",notes:"Internal project work; rename."},
+  {phase:"Planning",hours:134,bill:"0%",type:"Internal Operations",action:"RENAME",newPhase:"2. Team Meetings & Collaboration",notes:"Too generic; rename or retire in favor of specific phase."},
+  {phase:"Director meetings",hours:161,bill:"0%",type:"Internal Operations",action:"RENAME",newPhase:"2. Team Meetings & Collaboration",notes:"Rename."},
+  {phase:"Admin Cleanup",hours:127,bill:"0%",type:"Internal Operations",action:"RENAME",newPhase:"1. Administrative Work",notes:"Rename."},
+  {phase:"Non-Collateral Deliverable Uploads",hours:120,bill:"0%",type:"Internal Operations",action:"RENAME",newPhase:"1. Administrative Work",notes:"Rename."},
+  {phase:"Interviews (hiring)",hours:119,bill:"0%",type:"Internal Operations",action:"RENAME",newPhase:"1. Administrative Work",notes:"Rename. Note: distinguish from UX interviews."},
+  {phase:"Semi-annual reviews",hours:117,bill:"0%",type:"Internal Operations",action:"RENAME",newPhase:"1. Administrative Work",notes:"HR process; rename."},
+  {phase:"Recap Meeting",hours:27,bill:"0%",type:"Internal Operations",action:"RENAME",newPhase:"2. Team Meetings & Collaboration",notes:"Rename."},
+  {phase:"SPARK Surveys",hours:82,bill:"0%",type:"Internal Operations",action:"RENAME",newPhase:"1. Administrative Work",notes:"Rename."},
+  {phase:"Research team rubrics",hours:62,bill:"0%",type:"Internal Operations",action:"RENAME",newPhase:"1. Administrative Work",notes:"Rename."},
+  {phase:"Security trainings",hours:36,bill:"0%",type:"Internal Operations",action:"RENAME",newPhase:"3. Training & Development",notes:"Rename."},
+  {phase:"Open enrollment",hours:57,bill:"0%",type:"Internal Operations",action:"RENAME",newPhase:"1. Administrative Work",notes:"HR admin; rename."},
+  {phase:"Bamboo maintenance",hours:18,bill:"0%",type:"Internal Operations",action:"RENAME",newPhase:"1. Administrative Work",notes:"HR system admin; rename."},
+  // RENAME — Client Requests
+  {phase:"Client Requests General / Client Requests (project-level phase)",hours:100,bill:"100%",type:"Client Requests",action:"RENAME",newPhase:"1. Quick Response",notes:"Phase name mirrors the project name — confusing. Rename to Quick Response."},
+  {phase:"MM/YY [request name] template",hours:33,bill:"100%",type:"Client Requests",action:"RENAME",newPhase:"3. Research & Fulfillment",notes:"Template phase — rename to standard phase and enforce Notes for topic."},
+  // KEEP
+  {phase:"Vacation / Sick / Holiday / Lunch / Personal Day / Work Travel / Maternity/Paternity Leave / Out of Office / Bereavement / Jury duty",hours:16000,bill:"0%",type:"Time Off",action:"KEEP",newPhase:"(Keep existing phases)",notes:"Time Off project phases are clear and functional. No changes needed."},
 ];
 
 function renderTable(filter) {
@@ -1214,7 +1455,7 @@ const scenarios = [
     phase: "Business Development & Scoping",
     category: "Non-Billable — Scoping & BD",
     tags: ["scoping"],
-    enables: "Non-billable category prevents accidental billing · Audit: filter Non-Billable Scoping + billing status Billable = instantly find errors · Red col&#x200B;or makes BD pipeline projects visually distinct"
+    enables: "Non-billable category prevents accidental billing · Audit: filter Non-Billable Scoping + billing status Billable = instantly find errors · Red col<span></span>or makes BD pipeline projects visually distinct"
   },
   {
     scenario: "UX researcher films a study session",
@@ -1224,7 +1465,7 @@ const scenarios = [
     phase: "Study Field Work",
     category: "Billable — Research & Data",
     tags: ["moderated", "interview"],
-    enables: "Billable category ensures correct billing · Method tags enable UX methodology mix reporting · Purple project col&#x200B;or helps UX team navigate directly to their projects"
+    enables: "Billable category ensures correct billing · Method tags enable UX methodology mix reporting · Purple project col<span></span>or helps UX team navigate directly to their projects"
   },
   {
     scenario: "Analyst handles an ad-hoc client ask",
@@ -1239,17 +1480,17 @@ const scenarios = [
   {
     scenario: "Team member attends CI all-hands meeting",
     project: "Company Meetings (Everyone)",
-    projectColor: "#B7950B",
+    projectColor: "#F9A825",
     projectType: "Gold — Internal Ops",
     phase: "Team Meetings & Collaboration",
     category: "Non-Billable — Internal Operations",
     tags: [],
-    enables: "Non-billable category + gold col&#x200B;or = clear signal this is overhead · No tags needed for simple internal meetings — reduces logging friction"
+    enables: "Non-billable category + gold col<span></span>or = clear signal this is overhead · No tags needed for simple internal meetings — reduces logging friction"
   },
   {
     scenario: "Graphics team creates conference materials",
     project: "Conference / Marketing Efforts",
-    projectColor: "#B7950B",
+    projectColor: "#F9A825",
     projectType: "Gold — Internal Ops",
     phase: "Marketing & Business Development",
     category: "Non-Billable — Marketing & BD Support",
@@ -1259,12 +1500,12 @@ const scenarios = [
   {
     scenario: "Analyst logs 2025 scoping that never converted",
     project: "Ohio Mutual Insurance | Scoping | 2025",
-    projectColor: "#717D7E",
+    projectColor: "#E65100",
     projectType: "Archive this project",
     phase: "N/A",
     category: "N/A — archive the project",
     tags: [],
-    enables: "Low-use scoping projects get archived, not kept active · Future scoping goes into a 2026 scoping project with correct col&#x200B;or · Reduces list clutter so active projects are easier to find"
+    enables: "Low-use scoping projects get archived, not kept active · Future scoping goes into a 2026 scoping project with correct col<span></span>or · Reduces list clutter so active projects are easier to find"
   }
 ];
 
